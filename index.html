@@ -6,8 +6,8 @@
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="Towards Uncertainty-Aware Language Agent"/>
-  <meta property="og:description" content="Uncertainty-Aware Language Agent (UALA)"/>
+  <meta property="og:title" content="Agent S: An Open Agentic Framework that Uses Computers Like a Human"/>
+  <meta property="og:description" content="Agent S: An Open Agentic Framework that Uses Computers Like a Human"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Towards Uncertainty-Aware Language Agent</title>
+  <title>Agent S: An Open Agentic Framework that Uses Computers Like a Human</title>
   <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet"> -->
@@ -53,28 +53,30 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-2 publication-title">Towards Uncertainty-Aware Language Agent</h1>
+            <h1 class="title is-2 publication-title">Agent S: An Open Agentic Framework that Uses Computers Like a Human</h1>
             <br>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
+                <a href="https://www.simular.ai/" target="_blank">Simular AI</a></span>
+              <!-- <span class="author-block">
                 <a href="https://jiuzhouh.github.io" target="_blank">Jiuzhou Han</a><sup>1</sup>,</span>
                 <span class="author-block">
                 <a href="https://bayesian-models.org" target="_blank">Wray Buntine</a><sup>2</sup>,</span>
                 <span class="author-block">
                 <a href="https://eehsan.github.io" target="_blank">Ehsan Shareghi</a><sup>1</sup>,</span>
-                </span>
+                </span> -->
             </div>
 
-                  <div class="is-size-5 publication-authors">
+                  <!-- <div class="is-size-5 publication-authors">
                     <span class="author-block">Department of Data Science & AI, Monash University<sup>1</sup>, <br> College of Engineering and Computer Science, VinUniversity<sup>2</sup></span>
-                  </div>
+                  </div> -->
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/abs/2401.14016" target="_blank"
+                        <a href="" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -95,19 +97,19 @@
                   </span> -->
 
                     <!-- Supplementary data link -->
-                    <span class="link-block">
-                      <a href="https://github.com/Jiuzhouh/Uncertainty-Aware-Language-Agent/tree/main/data" target="_blank"
+                    <!-- <span class="link-block">
+                      <a href="" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fa fa-database"></i>
                       </span>
                       <span>Dataset</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/Jiuzhouh/Uncertainty-Aware-Language-Agent" target="_blank"
+                    <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -140,11 +142,22 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <div class="item has-text-centered">
-      <img src="static/images/uala_framework.png" alt="Teaser image" class="teaser-image" width="70%">
+      <img src="static/videos/teaser.m4v" type="video/m4v" alt="Teaser video" class="teaser-video" width="100%" muted="true" preload ="auto">
+      </div>
+      <br>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="item has-text-centered">
+      <img src="static/figures/teaser_final.png" alt="Teaser image" class="teaser-image" width="100%">
       </div>
       <br>
       <h2 class="subtitle has-text-justified">
-        Language Agents utilising Large Language Models to interact with the external world (e.g., through tools) to process collected observations towards solving a task have achieved great improvements in challenging reasoning tasks. A more effective design for language agents should have a better interplay between the implicit knowledge encoded in LLM's weight and the explicit knowledge of the external world. To this end, we present Uncertainty-Aware Language Agent that integrates uncertainty in language agent's cycle of Thought, Action, and Observation. The uncertainty moderates the interaction between the LLM and the external world, facilitating a more effective and efficient dynamic.
+        Agent S is a new agentic framework designed to enable computers to be used as intuitively as a human would. We introduce an Experience-Augmented Hierarchical Planning method. This method utilizes Online Web Knowledge for up-to-date information on frequently changing software and websites, along with Narrative Memory to leverage high-level experiences from past interactions. By breaking complex tasks into manageable subtasks and using Episodic Memory for step-by-step guidance, Agent S continuously refines its actions and learns from experience, achieving adaptable and effective task planning.
       </h2>
     </div>
   </div>
@@ -158,88 +171,96 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>While Language Agents have achieved promising success by placing Large Language Models at the core of a more versatile design that dynamically interacts with the external world, the existing approaches neglect the notion of uncertainty during these interactions. We present the Uncertainty-Aware Language Agent (UALA), a framework that orchestrates the interaction between the agent and the external world using uncertainty quantification. Compared with other well-known counterparts like ReAct, our extensive experiments across 3 representative tasks (HotpotQA, StrategyQA, MMLU) and various LLM sizes demonstrates that UALA brings a significant improvement of performance, while having a substantially lower reliance on the external world (i.e., reduced number of tool calls and tokens). Our analyses provide various insights including the great potential of UALA compared with agent fine-tuning, and underscore the unreliability of verbalised confidence of LLMs as a proxy for uncertainty.
+          <p>  We present Agent S, an open agentic framework that enables autonomous interaction with computers through Graphical User Interface (GUI), aimed at transforming human-computer interaction by automating complex, multi-step tasks. Agent S addresses three key challenges in automating computer tasks: acquiring domain-specific knowledge, planning over long task horizons, and handling dynamic, non-uniform interfaces. To this end, Agent S introduces experience-augmented hierarchical planning, which learns from external knowledge search and internal experience retrieval at multiple levels, facilitating efficient task planning and subtask execution. In addition, it employs an Agent-Computer Interface to better elicit the reasoning and control capabilities of GUI agents based on Multimodal Large Language Models. Evaluation on the OSWorld benchmark shows that Agent S outperforms the baseline by 9.37% on success rate (an 83.6% relative improvement) and achieves a new state-of-the-art. Comprehensive analysis highlights the effectiveness of individual components and provides insights for future improvements. Furthermore, Agent S demonstrates broad generalizability to different operating systems on a newly-released WindowsAgentArena benchmark.
           </p>
       </div>
     </div>
   </div>
 </section>
+
+
 <!-- End paper abstract -->
+<div class="container is-max-desktop">
+  <div class="item has-text-centered">
+    <img src="static/figures/tb_example.png" alt="Teaser image" class="teaser-image" width="100%">
+    </div>
+<!-- <div class="columns is-centered">
+  <div style="width: 100%;">
+    <div class="item has-text-centered">
+      <caption> The ablation study of ACI in OSWorld \(test_{sub}\).<br></caption>
+      <img src="static/figures/thunderbird_example/step_0.png" alt="Teaser image" class="teaser-image" width="90%">
+    </div>
+  </div>
+  <div style="width: 100%;">
+    <div class="item has-text-centered">
+      <caption> The ablation study of Memory Update in OSWorld \(test_{sub}\).<br></caption>
+      <img src="static/figures/thunderbird_example/step_1.png" alt="Teaser image" class="teaser-image" width="90%">
+    </div>
+  </div>
+  <div style="width: 100%;">
+    <div class="item has-text-centered">
+      <caption> The ablation study of ACI in OSWorld \(test_{sub}\).<br></caption>
+      <img src="static/figures/thunderbird_example/step_2.png" alt="Teaser image" class="teaser-image" width="90%">
+    </div>
+  </div>
+</div>
+</div>
+<div class="container is-max-desktop">
+<div class="columns is-centered">
+  <div style="width: 100%;">
+    <div class="item has-text-centered">
+      <caption> The ablation study of ACI in OSWorld \(test_{sub}\).<br></caption>
+      <img src="static/figures/thunderbird_example/step_3.png" alt="Teaser image" class="teaser-image" width="90%">
+    </div>
+  </div>
+  <div style="width: 100%;">
+    <div class="item has-text-centered">
+      <caption> The ablation study of Memory Update in OSWorld \(test_{sub}\).<br></caption>
+      <img src="static/figures/thunderbird_example/step_4.png" alt="Teaser image" class="teaser-image" width="90%">
+    </div>
+  </div>
+  <div style="width: 100%;">
+    <div class="item has-text-centered">
+      <caption> The ablation study of ACI in OSWorld \(test_{sub}\).<br></caption>
+      <img src="static/figures/thunderbird_example/step_5.png" alt="Teaser image" class="teaser-image" width="90%">
+    </div>
+  </div>
+</div> -->
+</div>
 
 <!-- Trajectories -->
 <section class="section" id="">
   <div class="container is-max-desktop content">
-    <h2 class="title">Examples of Single-inference UALA Trajectories</h2>
+    <h2 class="title">Overview of Agent S Framework</h2>
     <div class="item has-text-centered">
-      <img src="static/images/example-uala.png" alt="Teaser image" class="teaser-image" width="100%">
+      <img src="static/figures/framework.png" alt="Teaser image" class="teaser-image" width="100%">
       </div>
-      <p>Examples of single-inference UALA trajectories from HotpotQA. Example (a) illustrates the trajectory where CoT answer falls inside the certainty region. Example (b) is the trajectory where CoT is too uncertain and tool is activated, arriving at a final response which falls in the acceptable certainty region (denoted by UALA-S and UALA-M in our results). Example (c) is the trajectory where both CoT and tool-generated responses are considered  uncertain, and the agent asks help from human (denoted by UALA-S+Oracle in our results).
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <p> Given task \( T_u \) and initial environment observation \( o_0 \), the Manager conducts experience-augmented hierarchical planning using web knowledge and narrative memory to produce subtasks \( s_0,\dotsc,s_n \). For each \( s_i \), Worker \( w_i \) draws from episodic memory to generate an action \( a_t \) at time \( t \), which is executed by the ACI to return the next immediate observation \( o_{t+1} \). A self-evaluation module closes the loop by storing the summarized subtask and full-task trajectories in narrative and episodic memory.
       </p>
-    </div>
   </div>
 </section>
-
-<!-- Method -->
-<section class="section" id="">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Uncertainty Estimation</h2>
-      <p>Uncertainty estimation methods are broadly categorised into two types: single-inference based and multi-inference based. </p>
-      <p> <strong>Single-inference.</strong> Single-inference uncertainty estimation calculates the uncertainty based on one output, necessitating access to the token log-probabilities within that output. The methods vary based on the answer being a single-token (e.g., yes or no) or free-form (multi-token) format.</p>
-      <p> <strong>Multi-inference.</strong> Multi-inference uncertainty estimation calculates the uncertainty of an answer based on multiple outputs from an LLM, eliminating the need for individual token log-probabilities.</p>
-      <p><strong>Uncertainty Threshold.</strong> The decision to accept an answer or resort to alternative mechanisms hinges on the level of uncertainty associated with that answer. We propose different ways of setting the uncertainty threshold for single-inference and multi-inference uncertainty estimation. For single-inference, we adopt a subset of the training data to create a calibration set. The uncertainty threshold is estimated based on the calibration set. For the estimation of uncertainty threshold in multi-inference setting, we adopt the same subset of the training data as the calibration set. We use the average uncertainty of the answers in the calibration set as the threshold. </p>
-      <p>For the details about uncertainty estimation section in UALA, please refer to our paper.</p>
-    </div>
-  </div>
-</section>
-
 
 <!--Result-->
 <section class="section" id="">
   <div class="container is-max-desktop content">
-    <h2 class="title">Experiment Results</h2>
+    <h2 class="title">Pipeline of Memory Construction and Update</h2>
     <div class="item has-text-centered">
-      <caption>The performance of each prompting method and the number of tool calls on 500 HotpotQA instances, 229 StrategyQA instances and 570 MMLU (57 tasks) instances. Bars represent Performance (Exact Match), and the lines represent the number of Tool Calls. Numbers inside bars represent the total number of output tokens. Methods marked with * use backoff. <br></caption>
-      <img src="static/images/results_fullplots.png" alt="Teaser image" class="teaser-image" width="90%">
+      <img src="static/figures/learning_new.png" alt="Teaser image" class="teaser-image" width="90%">
       </div>
+      <p>The pipeline of memory construction and update, which contains two phases: Self-supervised Exploration and Continual Memory Update. The initial Narrative & Episodic Memory is constructed through some randomly curated tasks during the exploration phase, and then it is updated based on the inference tasks continually.</p>
+    </div>
+  </section>
 
+<section class="section" id="">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Main Result</h2>
       <div class="item has-text-centered">
-        <caption> Full results of baselines and our methods on two LLMs. The metric is Exact Match and the number in
-the bracket represents the number of Tool Calls. UALA-S denotes using single-inference uncertainty estimation method and UALA-M
-denotes using multi-inference uncertainty estimation method. Bold shows the best result for each column (oracle results excluded).<br></caption>
-        <img src="static/images/main_result.png" alt="Teaser image" class="teaser-image" width="90%">
+        <caption> Main results of Successful Rate (%) on the OSWorld full test set of all 369 test examples.<br></caption>
+        <img src="static/figures/main_result.png" alt="Teaser image" class="teaser-image" width="70%">
         </div>
-<p>(1) CoT outpeforms Standard on HotpotQA, while Standard excels on StrategyQA and MMLU. Self-Consistency consistently enhances results across three datasets and two LLMs. ReAct, when used for every instance, underperforms Standard/CoT/Self-Consistency. With the integration of backoff, ReAct+Backoff shows improvement but is generally still falls behind Self-Consistency, highlighting the benefit of SC's sampling and majority voting as a proxy for capturing uncertainty.</p>
-
-<p>(2) UALA-S significantly betters ReAct's performance, cutting tool use by over half, and surpasses Standard/CoT across all datasets. UALA-M achieves similar performance to UALA-S but with increased tool use. UALA-S+Backoff outperforms ReAct+Backoff and often exceeds Self-Consistency with UALA-M+Backoff delivering the best results in all settings on three datasets.</p>
-
-<p>(3) The largest gain in improvement by UALA is observed for HotpotQA (free-form), followed by StrategyQA (binary), and MMLU (multiple choice). This is expected as the free-form response space is much larger and diverse, compared with MCQ type of questions. The difference in gain could be explained in terms of the amount of uncertainty divergence between correct and incorrect answers in each task.</p>
-
-<p>(4) The average (single-inference and multi-inference) EM improvement for ChatGPT with LLaMA2-70B compared to Standard/CoT results: ChatGPT gains 11.7% and LLaMA2-70B gains  8.9%. This could be an indication that ChatGPT is likely to produce better-calibrated probability estimates, leading to a more reliable uncertainty estimation on training set that generalizes to test set. This could be an artefact of the two models' difference in size and training protocol. </p>
-
-<p>(5) The results from UALA-S+Oracle underscore an additional aspect of the value of uncertainty. This feature is particularly crucial in sensitive domains, as it can deter the agent from generating incorrect responses. Instead of risking an erroneous answer, the agent defers to human (we simulate this by using gold answer) when the response uncertainty is still high after tool activation.</p>
-
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    th, td {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
-</head>
-<body>
-
+<p>This table shows the performance comparison between Agent S and the baseline models, evaluated across the whole OSWorld test set. For the GPT-4o model, Agent S achieves an overall success rate of 20.58%, nearly doubling the performance of the best corresponding baseline (GPT-4o with 11.21%). Agent S consistently outperforms the baselines in the “Daily” and “Professional” tasks, where it reaches 27.06% and 36.73% success rates, respectively, compared to the best baseline results of 12.33% and 14.29%. These tasks are commonly used in daily life or involved with knowledge-intensive professional applications, which benefit more from the retrieval augmentation of Agent S. Both Claude-3.5-Sonnet and GPT-4o outperform the baseline versions across the majority of tasks. Claude-3.5-Sonnet even performs better than GPT-4o in “Daily” and “Professional” tasks. The results demonstrate the enhanced capability of Agent S in handling diverse and complex tasks more effectively than the baseline approaches. </p>
 
 </div>
 </section>
@@ -248,27 +269,44 @@ denotes using multi-inference uncertainty estimation method. Bold shows the best
 <section class="section" id="example">
   <div class="container is-max-desktop content">
     <h2 class="title">Analysis</h2>
-    <h3 class="title">Inference Cost</h3>
+    <p>To demonstrate the effectiveness of individual modules of Agent S, we stratified sampled a subset of 65 instances, \(test_{sub}\) from the full test set for the ablation study. Considering the inference cost, we utilized GPT-4o as the LLM backbone for all ablation studies for both the baseline and Agent S.</p>
+    <h4 class="title">Learning from experience enhances the domain knowledge of GUI agents.</h4>
     <div class="item has-text-centered">
-      <caption> The number of output tokens and tool calls per method.<br></caption>
-      <img src="static/images/tokens_calls_combined.png" alt="Teaser image" class="teaser-image" width="90%">
+      <caption> The ablation study of experience-augmented hierarchical planning in OSWorld \(test_{sub}\). The metric is Successful Rate (%).<br></caption>
+      <img src="static/figures/rag_ablation.png" alt="Teaser image" class="teaser-image" width="90%">
       </div>
-      <p>ReAct consumes substantially more (5×) output tokens than CoT. Compared with ReAct, UALA-S reduces the number of output tokens by more than 65%. UALA-M consumes more output tokens as it relies on multiple inference. Both UALA methods can substantially reduce tool calls more than 50% compared with ReAct, making them much more resource-efficient.</p>
-    <!-- insert two figures data_scale and data_type side by side-->
-    <!-- <div class="columns is-centered">
-      <div style="width: 30%;">
-        <div class="item has-text-centered">
-          <img src="static/images/answer_uncertainty.pdf" alt="Teaser image" class="teaser-image" width="90%">
-        </div>
-      </div>
-      <div style="width: 70%;">
-        <div class="item has-text-centered">
-          <img src="static/images/tokens_calls_combined.pdf" alt="Teaser image" class="teaser-image" width="90%">
-        </div>
-      </div>
-  </div> -->
+      <p>Learning from universal experience available as web knowledge allows Agent S to make informed plans across a wide range of tasks and has the most significant impact.
+The learning from Narrative and Episodic memories synergies effectively with web retrieval, and the results detail how their ablation affects the agent’s ability to handle complex tasks, underscoring the value of experiential learning. These results demonstrate that each component plays a critical role in enhancing the agent’s domain knowledge. Removing all three components (w/o All) degrades the performance significantly, revealing the importance of <i>learning from experience</i> in the design. </p>
 
-  <table class="tg">
+<br>
+    <!-- insert two figures data_scale and data_type side by side-->
+    <div class="columns is-centered">
+      <div style="width: 50%;">
+        <div class="item has-text-centered">
+          <caption> The ablation study of ACI in OSWorld \(test_{sub}\).<br></caption>
+          <img src="static/figures/aci_ablation_slim.png" alt="Teaser image" class="teaser-image" width="90%">
+        </div>
+      </div>
+      <div style="width: 50%;">
+        <div class="item has-text-centered">
+          <caption> The ablation study of Memory Update in OSWorld \(test_{sub}\).<br></caption>
+          <img src="static/figures/memory_ablation_slim.png" alt="Teaser image" class="teaser-image" width="90%">
+        </div>
+      </div>
+  </div>
+
+
+<h4 class="title">ACI elicits better reasoning abilities of LLMs and supports better agentic learning.</h4>
+<p> Comparing the baseline with <i>Agent S (ACI-only)</i> highlights the enhanced reasoning abilities achieved by incorporating ACI. Additionally, we examined the impact of ACI on agentic learning by integrating the Experiential learning process. For the baseline, adding Experiential learning slightly improved overall performance. However, when added to <i>Agent S (ACI-only)</i>, the performance improved significantly, demonstrating ACI's effectiveness in enhancing agentic learning. </p>
+
+<h4 class="title">Hierarchical Planning supports long-horizon workflows.</h4>
+<p>The <i>ACI-only + Experiential Learning </i> setup in shows Agent S performance without Hierarchical Planning, and the observed performance drop (26.15% to 20.00%) compared to the full Agent S underscores the importance of Hierarchical Planning in modeling long-horizon workflows. The effect of hierarchical formulation becomes pronounced in the presence of Experiential learning as the Manager can generate more detailed and accurate plans in the subtask planning stage.</p>
+
+  <h4 class="title">Exploration, Continual Memory Update and Self-Evaluator are indispensable for memory construction.</h4>
+  <p> Removing exploration limits memory updates to the inference phase only. Removing the continual memory update means we only use the memory obtained from the exploration phase without subsequent updates. Removing the self-evaluator involves replacing summarized experiences with the original full trajectories. The results reveal that ablating both the continual memory update and self-supervised exploration phases results in a performance drop, with the self-supervised exploration being much more impactful. The ablation of the Self-Evaluator further shows the benefits of using summarized trajectories instead of full trajectory exemplars for planning. </p>
+
+
+  <!-- <table class="tg">
 
   <thead>
     <tr>
@@ -318,10 +356,10 @@ denotes using multi-inference uncertainty estimation method. Bold shows the best
 <h3 class="title">Answer Uncertainty Visualisation</h3>
   <div class="item has-text-centered">
     <caption> The visualisation (boxplot) of uncertainty range for correct and incorrect answers of three datasets on ChatGPT. <br></caption>
-    <img src="static/images/answer_uncertainty_boxplot.png" alt="Teaser image" class="teaser-image" width="60%">
+    <img src="static/figures/rag_ablation.png" alt="Teaser image" class="teaser-image" width="90%">
   </div>
 
-  <p>In both single-inference and multi-inference settings, correct answers consistently exhibit lower uncertainty compared to incorrect ones. This difference is statistically significant. When calculating the difference between the average uncertainty of correct and incorrect answers we observe the largest difference to belong to HotpotQA, followed by StrategyQA, and MMLU. This explains why the gain from UALA follows the same pattern in the main results.</p>
+  <p>In both single-inference and multi-inference settings, correct answers consistently exhibit lower uncertainty compared to incorrect ones. This difference is statistically significant. When calculating the difference between the average uncertainty of correct and incorrect answers we observe the largest difference to belong to HotpotQA, followed by StrategyQA, and MMLU. This explains why the gain from UALA follows the same pattern in the main results.</p> -->
 
   <!-- <table class="tg">
   <thead>
@@ -362,7 +400,7 @@ denotes using multi-inference uncertainty estimation method. Bold shows the best
   </tbody> -->
   <!-- </table> -->
 
-<h3 class="title">Language Agent Fine-tuning vs. UALA</h3>
+<!-- <h3 class="title">Language Agent Fine-tuning vs. UALA</h3>
     <table class="tg">
     <thead>
       <tr>
@@ -431,21 +469,32 @@ denotes using multi-inference uncertainty estimation method. Bold shows the best
     </table>
         <p>We demonstrate the comparison between UALA-S and fine-tuning language agents following the FireAct setting. For ChatGPT, we use the official GPT-3.5-Turbo fine-tuning API; for LLaMA2-70B, we use LoRA. To have a side-by-side comparison, we use the same 500 training samples used for the calibration set, to construct the fine-tuning data. Mimicking the FireAct setting, we ran the 500 examples using ReAct with ChatGPT, and collected the successful trajectories as the training data for FireAct. This amounted to 162 training examples for HotpotQA and 283 for StrategyQA. In addition, to match the amount of training data as FireAct setting, we also ran an additional 1000 examples to increase the amount of successful training trajectories to 512 for HotpotQA and 567 for StrategyQA.  </p>
           <p>Interestingly, on HotpotQA using 162 training examples, FireAct under-performs the few-shot (6-shots) ReAct agent, while it outperforms ReAct on StrategyQA using 283 training examples. Increasing the amount of training data to 500+ leads to improvement on both LLMs with fine-tuned ChatGPT-based agents outperforming the ReAct counterpart on both datasets. Our method, UALA-S, achieves the best result without any fine-tuning and using only the 500 samples for creating the calibration set. This capitalises an obvious empirical advantage for utilising uncertainty instead of fine-tuning in the presence of small amount of data.</p>
-      </div>
+      </div> -->
     </div>
 </section>
 
+<section class="section" id="">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Generalization to Different Operating Systems </h2>
+      <div class="item has-text-centered">
+        <caption> Results of Successful Rate (%) on WindowsAgentArena using GPT-4o and Image + Accessibility Tree input on the full test set of all 154 test examples.<br></caption>
+        <img src="static/figures/windows_result.png" alt="Teaser image" class="teaser-image" width="90%">
+        </div>
+<p>We test the Agent S framework with no modification on WindowsAgentArena, a Windows OS benchmark released contemporaneously with our work. We compare Agent S with the similar configuration with GPT-4o as the MLLM backbone, Accessibility Tree + Image as the input, and parsing with OCR. As shown in the table, Agent S outperforms the Navi agent without any adaptation to the new Windows environment.</p>
+
+</div>
+</section>
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{han2024uncertaintyaware,
-      title={Towards Uncertainty-Aware Language Agent},
-      author={Jiuzhou Han and Wray Buntine and Ehsan Shareghi},
+      <pre><code>@misc{AgentS,
+      title={Agent S: An Open Agentic Framework that Uses Computers Like a Human},
+      author={Saaket Agashe<sup>*</sup>, Jiuzhou Han<sup>*</sup>, Shuyu Gan, Jiachen Yang, Ang Li, Xin Eric Wang},
       year={2024},
-      eprint={2401.14016},
+      eprint={},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }</code></pre>
@@ -456,8 +505,7 @@ denotes using multi-inference uncertainty estimation method. Bold shows the best
 
 
 
-  <footer class="footer">
-    <!-- add three logo to the footer -->
+  <!-- <footer class="footer">
     <div class="container is-max-desktop content">
     <div style="display: flex; justify-content: space-between;">
       <div style="width: 30%; margin-left: 0px; margin-right: 0px;">
@@ -472,7 +520,7 @@ denotes using multi-inference uncertainty estimation method. Bold shows the best
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 <!-- Statcounter tracking code -->
 
